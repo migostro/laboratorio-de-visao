@@ -26,7 +26,7 @@
 | **Descrição**         | **Valor**                |
 |-----------------------|--------------------------|
 | Número de Classes     | 10                       |
-| Número de Imagens     | XXX                      |
+| Número de Imagens     | 1080                     |
 | Tamanho da Base       | XXXXX MB                 |
 | Resolução das Imagens | 4608x3456                |
 | dpi                   | 180                      |
@@ -38,3 +38,10 @@
 > Fundos: Branco, Preto e Variado
 
 # Parte 2:
+
+## Data Augumentation
+1. Converter o dataset em tons de cinza RGB2GRAY
+2. Soma de fundo com gradiente de níveis de cinza
+3. Logaritmo da Imagem
+4. Exponencial da Imagem
+5. Filtro da média implementado usando **convolução**
