@@ -12,6 +12,7 @@ from skimage import io, color
 
 # visualization
 from matplotlib import pyplot as plt
+from mpl_toolkits.axes_grid1 import ImageGrid
 
 # HELPER FUNCTIONS
 def float_to_int(img):
@@ -61,6 +62,7 @@ def generate_gradient(rows, columns):
 
 if __name__ == "__main__":
     GENERATE_IMAGES = True
+    GENERATE_PREVIEW = True
     TEST_MODE = False
 
     # execution time
@@ -116,6 +118,22 @@ if __name__ == "__main__":
 
         generate_csv(list_filepaths(grayData_path, []), grayData_path)
         generate_csv(list_filepaths(augumentedData_path, []), augumentedData_path)
+
+    # GENERATE PREVIEW
+    if(GENERATE_PREVIEW):
+        rng = np.random.default_rng()
+        rng_idx = rng.choice(len(original_filepaths), size=50, replace=False)
+
+        fig = plt.figure(figsize=(20,10))
+        grid = ImageGrid(fig, 111, nrows_ncols=(5, 10), axes_pad=0.1)
+
+        for ax, idx in zip(grid, rng_idx):
+            ax.imshow(io.imread(original_filepaths[idx]), cmap=plt.cm.gray)
+            ax.axis("off")
+
+        fig.savefig(f'{originalData_path}/datasetPreview.png', dpi=300)
+        plt.show()
+        plt.close()
 
     # TEST IMAGE
     if(TEST_MODE):
