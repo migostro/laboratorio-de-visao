@@ -12,10 +12,10 @@
 ### Tabela Sumária
 
 | **Descrição**         | **Valor**                |
-|-----------------------|--------------------------|
+|:---------------------:|:------------------------:|
 | Número de Classes     | 10                       |
-| Número de Imagens     | XXX                      |
-| Tamanho da Base       | XXXXX MB                 |
+| Número de Imagens     | 1080                     |
+| Tamanho da Base       | 2144 MB                  |
 | Resolução das Imagens | 4608x3456                |
 | dpi                   | 180                      |
 | Intensidade de Bits   | 24                       |
@@ -23,15 +23,18 @@
 
 ### Tabela Detalhada por Classe
 
-| **Descrição**         | **Valor**                |
-|-----------------------|--------------------------|
-| Número de Classes     | 10                       |
-| Número de Imagens     | 1080                     |
-| Tamanho da Base       | XXXXX MB                 |
-| Resolução das Imagens | 4608x3456                |
-| dpi                   | 180                      |
-| Intensidade de Bits   | 24                       |
-| Câmera                | Canon PowerShot SX530 HS |
+| **#** | **Classe** | **Número de Objetos** | **Fundos** | **Ambientes** | **Horários** | **Repetições** | **Número de Imagens** |
+|:-----:|:----------:|:---------------------:|:----------:|:-------------:|:------------:|:--------------:|:---------------------:|
+| 1     | Borracha   | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 2     | Carta      | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 3     | Celular    | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 4     | Concha     | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 5     | Copo       | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 6     | Dado       | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 7     | Estátua    | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 8     | Lápis      | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 9     | Tubo       | 3                     | 3          | 2             | 2            | 3              | 108                   |
+| 10    | Vela       | 3                     | 3          | 2             | 2            | 3              | 108                   |
 
 > (3 objetos * (2 horários * 2 ambientes * 3 fundos)) * 3 repetições = 108 fotos por classe
 
@@ -45,3 +48,12 @@
 3. Logaritmo da Imagem
 4. Exponencial da Imagem
 5. Filtro da média implementado usando **convolução**
+
+## Normalização
+1. Protótipo Médio
+2. Histograma Médio
+3. Variância do Histograma de cada classe
+
+# Parte 3:
+
+## Segmentação e Classificação
