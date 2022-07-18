@@ -16,7 +16,7 @@
 4. Criação do projeto no GitHub com README explicativo sobre o EP com link para o dataset [DONE]
 
 ## Descrição do Dataset
-[Link para o Dataset no Google Drive](https://drive.google.com/drive/folders/1Zplj-5pfgdX2heNs4wEfinPCgnrLnIvQ)
+[Link para o Dataset no Google Drive](https://drive.google.com/drive/u/1/folders/1N5sFs_M7oD0psaO6KZeyeMq2CqmY-haO)
 
 ### Tabela Sumária
 
