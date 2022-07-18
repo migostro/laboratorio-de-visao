@@ -1,5 +1,14 @@
 # MAC5768 EP 2022
 
+| **Nome**                         | **NUSP** |
+|:--------------------------------:|:--------:|
+| Aldomar Pietro Santana Silva     | 10770162 |
+| Arthur Sakayan                   | 10297647 |
+| Eduarda Ramos Bezerra de Alencar | 10372540 |
+| Mateus Santos Freire             | 11796889 |
+| Miguel Pereira Ostrowski         | 10723610 |
+| Rafael Badain                    | 10277102 |
+
 # Parte 1: Aquisição de Imagens + Formação do Dataset
 1. Captura de imagens [DONE]
 2. Organização da base de imagens [DONE]
@@ -56,4 +65,14 @@
 
 # Parte 3:
 
-## Segmentação e Classificação
+## Segmentação
+1. Segmentar manualmente o objeto de interesse e produzir ground truths
+2. Elaborar uma função de segmentação automática
+3. Elaborar uma função de dextração do bounding box
+4. Avaliar os resultados da extração do bounding box e segmentação (comparar com ground truths)
+
+> Como cada classe contém 108 amostras, 108 * 0,15 ~= 16 images são segmentadas manualmente
+
+# Classificação
+5. Elaborar uma função para extrair os feature vectors da imagem
+6. Usar um algoritmo para classificar os objetos
